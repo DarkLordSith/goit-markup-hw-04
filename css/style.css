@@ -160,6 +160,8 @@ img {
     url(../images/img-11.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-container {
@@ -246,7 +248,7 @@ img {
 }
 /* ------------------------------------ */
 
-/* --------------OUR TEAM-------------- */
+/*todo --------------OUR TEAM-------------- */
 
 .team {
   background-color: #f4f4fd;
@@ -281,7 +283,7 @@ img {
 }
 
 .team-contant {
-  padding: 32px 0;
+  /* padding: 32px 0; */
 }
 
 .team-subtitle {
@@ -300,6 +302,28 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.team-sm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 16px; */
+}
+.team-sm-list {
+  display: flex;
+  gap: 24px;
+}
+.team-sm-item {
+  margin: 0 8px;
+}
+.team-sm-link {
+}
+
+.team-icon {
+  width: 16px;
+  height: 16px;
+}
+
 /* ------------------------------------ */
 
 /* -----------OUR PORTFOLIO------------ */
@@ -363,6 +387,7 @@ img {
 }
 
 .footer-content {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -375,5 +400,26 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-container {
+  display: flex;
+  /* align-items: center; */
+}
+.footer-socialmedia {
+}
+/* .footr-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+} */
+.footer-list {
+  display: flex;
+  gap: 16px;
+  /* align-items: center; */
+}
+.footer-link {
+  display: block;
 }
 /* ------------------------------------ */
