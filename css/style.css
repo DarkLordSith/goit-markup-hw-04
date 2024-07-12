@@ -330,6 +330,8 @@ img {
 }
 .team-sm-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 .team-sm-item {
