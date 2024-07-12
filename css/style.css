@@ -341,6 +341,7 @@ img {
   justify-content: center;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-sm-link:hover {
@@ -381,13 +382,44 @@ img {
   width: calc((100% - 2 * 24) / 3);
 }
 
+.portfolio-item:hover,
+.portfolio-item:hover .portfolio-item-text {
+  transform: translateY(0);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-image {
 }
 
+.portfolio-item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 32px;
+  height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+
 .portfolio-content {
-  border: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  border-top: none;
+  width: 360px;
+  height: 120px;
 }
 
 .portfolio-subtitle {
@@ -453,6 +485,7 @@ img {
   justify-content: center;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-sm-link:hover {
